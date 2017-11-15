@@ -71,6 +71,8 @@ int		main(int ac, char **argv)
 		t = atoi(argv[1]);
 		n = atoi(argv[2]);
 		k = atoi(argv[3]);
+		if (t == 0 || n == 0 || k == 0 || (atoi(argv[4])) == 0)
+			error(5);
 		if (n != strlen(argv[4]))
 			error(4);
 		if (t < 1 && t > 100)
